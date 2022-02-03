@@ -1,10 +1,8 @@
 import React from "react";
 
-function Task({name, categories}) {
+function Task({name, categories, deleteButton}) {
 
-  function deleteButton(event){
-    console.log(event.target.parentSibling)
-  }
+  
   console.log(name)
   return (
     <div className="task">
