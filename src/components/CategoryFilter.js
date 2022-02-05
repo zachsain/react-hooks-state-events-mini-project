@@ -1,10 +1,18 @@
 import React from "react";
 
-function CategoryFilter() {
+function CategoryFilter({categories, tasks, handleClick, }) {
+  console.log(categories)
+
+
   return (
     <div className="categories">
       <h5>Category filters</h5>
-      {/* render <button> elements for each category here */}
+      {categories.map(item => {
+        
+      return <button key={item} className= "" onClick={handleClick}>
+          {item} 
+        </button>
+        })}
     </div>
   );
 }
